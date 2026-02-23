@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Book Management</h1>
+
+    <section class="form-section">
+      <h2>Add a New Book</h2>
+      <form id="book-form">
+        <div class="form-row">
+          <label for="title">Title:</label>
+          <input type="text" id="title" required />
+        </div>
+
+        <div class="form-row">
+          <label for="price">Price:</label>
+          <input type="number" id="price" step="0.01" min="0" required />
+        </div>
+
+        <div class="form-row">
+          <label for="genre">Genre:</label>
+          <select id="genre" required>
+            <option value="">-- Select Genre --</option>
+            <option>Thriller</option>
+            <option>Drama</option>
+            <option>Fantasy</option>
+            <option>Science Fiction</option>
+            <option>Classic</option>
+            <option>Romance</option>
+            <option>Mythology</option>
+            <option>Horror</option>
+            <option>Mystery</option>
+          </select>
+        </div>
+
+        <button type="submit" id="add-book-btn">Add Book</button>
+      </form>
+    </section>
+
+    <section class="table-section">
+      <h2>Book List</h2>
+      <table id="books-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Genre</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
